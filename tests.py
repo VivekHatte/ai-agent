@@ -1,17 +1,9 @@
 from functions.get_files_info import get_files_info
+from functions.get_files_info import get_file_content
 
 
-print(f'Results for current directory:')
-print(get_files_info("calculator", "."))
+print(get_file_content("calculator", "lorem.txt"))
 
-print(f'Results for \'pkg\' directory:')
-print(get_files_info("calculator", "pkg"))
-
-print(f'Results for \'/bin\' directory:')
-print(get_files_info("calculator", "/bin"))
-
-print(f'Results for \'../\' directory:')
-print(get_files_info("calculator", "../"))
 
 
 
